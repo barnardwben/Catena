@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/fd759c5528.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Catena</title>
+  </head>
+  <body>
+    <section id="sidebar">
+      <div class="sidebar-content-container">
+        <div class="sidebar-top">
+          <div class="search-bar-container">
+            <form id="search-form">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <button class="search-btn">GO</button>
+            </form>
+          </div>
+          <div class="sidebar-toplinks-container">
+            <div class="sidebar-toplink-div">
+              <button class="today sidebar-top-link pages" name="today">
+                <i class="fas fa-star" style="color: gold"></i> Today
+              </button>
+            </div>
+            <div class="sidebar-toplink-div">
+              <button class="upcoming sidebar-top-link pages" name="upcoming">
+                <i
+                  class="fas fa-calendar-alt"
+                  style="color: red; margin-right: 5px"
+                ></i>
+                Upcoming
+              </button>
+            </div>
+            <div class="sidebar-toplink-div">
+              <button
+                class="recent-changes sidebar-top-link pages"
+                name="recent"
+              >
+                <i
+                  class="fas fa-clock"
+                  style="color: rgb(20, 89, 225); margin-right: 2.5px"
+                ></i>
+                Recent Changes
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-middle">
+          <div class="workspace-btn-container">
+            <button class="add-workspaces-btn" name="workspaces">
+              WORKSPACES <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div id="workspaces">
+            <div class="workspace">
+              <button class="workspaces-btn pages" name="0">
+                Aloha Secrets
+              </button>
+            </div>
+          </div>
+          <div id="documents-container">
+            <span class="pages-text">PAGES</span>
+            <div class="journal">
+              <button class="journal-btn pages">Journal</button>
+            </div>
+            <div class="to-do">
+              <button class="to-do-btn pages">To-Dos</button>
+            </div>
+            <div class="guide">
+              <button class="guide-btn active-btn pages" name="guide">
+                Guide
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-bottom">
+          <div id="user-settings">
+            <div class="login-signup-container active">
+              <button class="signup">Sign Up Free</button>
+              <button class="login">Login</button>
+            </div>
+            <div class="account-settings-container not-active">
+              <span class="account-text">ACCOUNT</span>
+              <button class="settings">Settings</button>
+              <button class="signout">Sign Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main-content"></section>
+    <section id="workspace-form-container" class="noshow-workspace-modal">
+      <form class="workspace-form">
+        <div class="exit-workspace-form">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="workspace-alert noshow-alert">
+          * A Workspace with this title already exists. <br />
+          Try a different name to proceed.
+        </div>
+        <label for="title">Workspace Name</label>
+        <input
+          id="title"
+          name="title"
+          type="text"
+          placeholder="Dog Walking Business"
+          required
+        />
+        <label for="description">What is your workspace for?</label>
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+          placeholder="This workspace is for..."
+        ></textarea>
+        <button class="workspace-form-btn" type="submit">Add Workspace</button>
+      </form>
+    </section>
+
+    <section id="card-form-container" class="noshow-card-modal">
+      <form class="card-form" autocomplete="off">
+        <div class="exit-card-form">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <label for="cardtitle">Card Title</label>
+        <input
+          id="cardtitle"
+          name="cardtitle"
+          type="text"
+          placeholder="Study Arrays"
+          required
+        /><label for="carddue">Due Date</label>
+        <input id="carddue" name="carddue" type="date" required />
+        <label for="carddescription">What is the goal of this card?</label>
+        <textarea
+          name="carddescription"
+          id="carddescription"
+          cols="30"
+          rows="10"
+          placeholder="This card is for studying arrays..."
+        ></textarea>
+
+        <button class="card-form-btn" type="submit">Add Card</button>
+      </form>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
