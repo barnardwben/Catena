@@ -53,6 +53,7 @@ export const PageSwitch = (() => {
     }
   }
 
+  // GET ALL BUTTONS WITH THE CLASS pages AND ADD OUR PAGESWITCH FUNCTIONALITY TO THEM ON CLICK
   document.querySelectorAll(".pages").forEach((page) => {
     page.addEventListener("click", (e) => {
       activePageBtn(e.target);
