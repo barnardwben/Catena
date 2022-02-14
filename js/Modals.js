@@ -9,6 +9,8 @@ const Modals = (() => {
   function exitModal(element, className) {
     element.classList.add(className);
   }
+
+  // RETURN FUNCTIONS TO BE USED THROUGHOUT APPLICATION
   return { showModal, exitModal };
 })();
 
