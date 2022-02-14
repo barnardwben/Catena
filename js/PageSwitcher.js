@@ -1,7 +1,6 @@
 import { GuidePage } from "./Guide";
 import { TodayPage } from "./Today";
 import { WorkspacePages } from "./WorkspacePages";
-// import { WorkspacePagesHandler } from "./WorkspacePages";
 
 export const PageSwitch = (() => {
   let pageBodyContent = document.querySelector("#main-content");
