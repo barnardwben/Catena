@@ -28,12 +28,7 @@ const WorkspacePages = (() => {
   function submitHandler(e) {
     e.preventDefault();
 
-    console.log("workingtest");
-
-    // console.log(clickedRow);
     BoardHandler.createCard(clickedRowType, currentSpace);
-
-    // console.log("cardsArr", cardsArr);
 
     Modals.exitModal(cardFormContainer, "noshow-card-modal");
 
