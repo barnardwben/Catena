@@ -1,4 +1,7 @@
 import { GuidePage } from "./Guide";
+import { JournalPage } from "./Journal";
+import { UpcomingPage } from "./Upcoming";
+import { ToDoPage } from "./ToDos";
 import { TodayPage } from "./Today";
 import { WorkspacePages } from "./WorkspacePages";
 
@@ -33,7 +36,17 @@ export const PageSwitch = (() => {
     // CROSS CHECK nameOfPage VALUE IN ORDER TO CORRECTLY POPULATE OUR PAGE WITH THE CORRECT CONTENT
     switch (nameOfPage) {
       case "today":
-        pageBodyContent.appendChild(TodayPage.todayContent);
+        TodayPage.PaintTodaysPage();
+        break;
+      case "upcoming":
+        UpcomingPage.PaintUpcomingPage();
+        break;
+      case "journals":
+        JournalPage.PaintJournalPage();
+        break;
+
+      case "tasks":
+        ToDoPage.PaintTaskPage();
         break;
       case "guide":
         pageBodyContent.appendChild(GuidePage.guideContent);
