@@ -74,7 +74,7 @@ const GuidePage = (() => {
 
   guideOne.appendChild(guideOneDescriptionOne);
 
-  let firstVid = document.createElement("embed");
+  let firstVid = document.createElement("video");
   firstVid.classList.add("videos");
   firstVid.src = "../videos/cwguide1.mp4";
   firstVid.style.width = "700px";
