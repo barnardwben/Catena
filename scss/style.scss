@@ -30,9 +30,17 @@ body {
 
       grid-row: 1/4;
 
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 215px;
+        }
+      }
+
       .search-bar-container {
         width: 100%;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -259,7 +267,7 @@ body {
     }
 
     .sidebar-bottom {
-      grid-row: 9/11;
+      grid-row: 10/11;
       width: 100%;
       // background: rgb(0, 255, 174);
       position: relative;
@@ -757,4 +765,771 @@ body {
 
 .noshow-card-modal {
   display: none !important;
+}
+
+#task-form-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: workspaceModalPop;
+  animation-duration: 0.5s;
+
+  .task-form {
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .exit-task-form {
+      color: rgb(241, 58, 12);
+      position: absolute;
+      right: 0.25rem;
+      top: 0.25rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    label {
+      color: #fff;
+    }
+
+    input {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    input:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    textarea {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    textarea:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    .task-form-btn {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+  }
+}
+
+.noshow-task-modal {
+  display: none !important;
+}
+
+.to-do-content {
+  .add-task {
+    background-color: rgb(0, 228, 253);
+    border: 1px solid rgba(0, 208, 254, 0.9);
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 15px;
+    text-align: end;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(115, 115, 115, 0.45);
+  }
+  .task-section {
+    .tasks-container {
+      .temp-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+
+        .temp-header {
+          margin: auto 0;
+          color: rgba(190, 190, 190, 0.925);
+        }
+      }
+
+      .task-div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        background: rgba(240, 240, 240, 0.925);
+        border: 1px solid rgba(142, 142, 142, 0.25);
+        width: 98%;
+        border-radius: 5px;
+        padding: 0.75rem;
+        margin: 1rem auto;
+        box-shadow: 0 0 15px rgba(115, 115, 115, 0.45);
+
+        .task-title {
+          text-decoration: underline;
+          font-size: 20px;
+        }
+        .task-description {
+          background-color: rgba(56, 122, 137, 0.578);
+          border: 1px solid rgba(194, 194, 194, 0.75);
+          border-radius: 5px;
+          padding: 0.5rem;
+          color: #fff;
+          box-shadow: 0 0 15px rgba(115, 115, 115, 0.2);
+        }
+        .task-due {
+          border: 1px solid rgba(204, 134, 28, 0.898);
+          background: rgba(255, 230, 213, 0.898);
+          padding: 0.5rem;
+          font-weight: 600;
+          font-size: 16px;
+          outline: none;
+          color: rgb(75, 84, 88);
+          border-radius: 5px;
+          justify-self: end;
+          width: 50%;
+        }
+
+        .task-btns-container {
+          justify-self: end;
+
+          .task-edit {
+            font-size: 25px;
+            color: rgb(30, 236, 61);
+            text-shadow: 0px 0px 4px rgba(10, 138, 72, 0.5);
+            cursor: pointer;
+            justify-self: end;
+            margin: 0 0.5rem;
+          }
+
+          .task-delete {
+            font-size: 25px;
+            color: rgb(94, 10, 138);
+            text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+            cursor: pointer;
+            justify-self: end;
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#updatetask-form-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: workspaceModalPop;
+  animation-duration: 0.5s;
+
+  .updatetask-form {
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .exit-updatetask-form {
+      color: rgb(241, 58, 12);
+      position: absolute;
+      right: 0.25rem;
+      top: 0.25rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    label {
+      color: #fff;
+    }
+
+    input {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    input:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    textarea {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    textarea:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    .updatetask-form-btn {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+  }
+}
+
+.noshow-updatetask-modal {
+  display: none !important;
+}
+
+.today-section-content {
+  .tlist-section {
+    .tlist-container {
+      .temp-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+
+        .temp-header {
+          margin: auto 0;
+          color: rgba(190, 190, 190, 0.925);
+        }
+      }
+
+      .task-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        background: rgba(240, 240, 240, 0.925);
+        border: 1px solid rgba(142, 142, 142, 0.25);
+        width: 98%;
+        border-radius: 5px;
+        padding: 0.75rem;
+        margin: 1rem auto;
+        box-shadow: 0 0 15px rgba(115, 115, 115, 0.45);
+
+        .task-title {
+          text-decoration: underline;
+          font-size: 20px;
+        }
+        .task-description {
+          background-color: rgba(56, 122, 137, 0.578);
+          border: 1px solid rgba(194, 194, 194, 0.75);
+          border-radius: 5px;
+          padding: 0.5rem;
+          color: #fff;
+          box-shadow: 0 0 15px rgba(115, 115, 115, 0.2);
+        }
+        .task-due {
+          border: 1px solid rgba(204, 134, 28, 0.898);
+          background: rgba(255, 230, 213, 0.898);
+          padding: 0.5rem;
+          font-weight: 600;
+          font-size: 16px;
+          outline: none;
+          color: rgb(75, 84, 88);
+          border-radius: 5px;
+          justify-self: end;
+          width: 50%;
+        }
+
+        .task-btns-container {
+          justify-self: end;
+
+          .task-edit {
+            font-size: 25px;
+            color: rgb(30, 236, 61);
+            text-shadow: 0px 0px 4px rgba(10, 138, 72, 0.5);
+            cursor: pointer;
+            justify-self: end;
+            margin: 0 0.5rem;
+          }
+
+          .task-delete {
+            font-size: 25px;
+            color: rgb(94, 10, 138);
+            text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+            cursor: pointer;
+            justify-self: end;
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.upcoming-section-content {
+  .uplist-section {
+    .uplist-container {
+      .temp-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+
+        .temp-header {
+          margin: auto 0;
+          color: rgba(190, 190, 190, 0.925);
+        }
+      }
+      .task-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        background: rgba(240, 240, 240, 0.925);
+        border: 1px solid rgba(142, 142, 142, 0.25);
+        width: 98%;
+        border-radius: 5px;
+        padding: 0.75rem;
+        margin: 1rem auto;
+        box-shadow: 0 0 15px rgba(115, 115, 115, 0.45);
+
+        .task-title {
+          text-decoration: underline;
+          font-size: 20px;
+        }
+        .task-description {
+          background-color: rgba(56, 122, 137, 0.578);
+          border: 1px solid rgba(194, 194, 194, 0.75);
+          border-radius: 5px;
+          padding: 0.5rem;
+          color: #fff;
+          box-shadow: 0 0 15px rgba(115, 115, 115, 0.2);
+        }
+        .task-due {
+          border: 1px solid rgba(204, 134, 28, 0.898);
+          background: rgba(255, 230, 213, 0.898);
+          padding: 0.5rem;
+          font-weight: 600;
+          font-size: 16px;
+          outline: none;
+          color: rgb(75, 84, 88);
+          border-radius: 5px;
+          justify-self: end;
+          width: 50%;
+        }
+
+        .task-btns-container {
+          justify-self: end;
+
+          .task-edit {
+            font-size: 25px;
+            color: rgb(30, 236, 61);
+            text-shadow: 0px 0px 4px rgba(10, 138, 72, 0.5);
+            cursor: pointer;
+            justify-self: end;
+            margin: 0 0.5rem;
+          }
+
+          .task-delete {
+            font-size: 25px;
+            color: rgb(94, 10, 138);
+            text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+            cursor: pointer;
+            justify-self: end;
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#journal-form-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: workspaceModalPop;
+  animation-duration: 0.5s;
+
+  .journal-form {
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .exit-journal-form {
+      color: rgb(241, 58, 12);
+      position: absolute;
+      right: 0.25rem;
+      top: 0.25rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    label {
+      color: #fff;
+    }
+
+    input {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    input:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    textarea {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    textarea:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    .journal-form-btn {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+  }
+}
+
+.noshow-journal-modal {
+  display: none !important;
+}
+
+.journal-content {
+  .journals-section {
+    margin: 3rem 0 0 0;
+    .journals-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-content: center;
+      align-content: center;
+
+      .add-journal-btn {
+        font-size: 8rem;
+        color: rgb(45, 181, 122);
+        text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+        cursor: pointer;
+        justify-self: center;
+        margin: 0 0.5rem;
+        transition: 0.2s all ease-in-out;
+      }
+
+      .add-journal-btn:hover {
+        color: rgb(90, 90, 90);
+      }
+
+      .jr-div {
+        justify-self: center;
+        .all-journals {
+          font-size: 8rem;
+          color: rgb(140, 140, 140);
+          text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+          cursor: pointer;
+          justify-self: center;
+          margin: 0 0.5rem;
+          transition: 0.2s all ease-in-out;
+        }
+
+        .journal-title {
+          text-align: center;
+        }
+
+        .journal-created-date {
+          border: 1px solid rgba(204, 134, 28, 0.898);
+          background: rgba(255, 230, 213, 0.898);
+          // border: none;
+          font-weight: 600;
+          font-size: 11px;
+          outline: none;
+          color: rgb(75, 84, 88);
+          padding: 0.5rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.popup-jr-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .popup-jr-div {
+    position: relative;
+    background: rgba(245, 245, 245, 0.925);
+    border: 1px solid rgba(142, 142, 142, 0.25);
+    width: 600px;
+    height: 85%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    box-shadow: 0 0 15px rgba(115, 115, 115, 0.2);
+    overflow-y: scroll;
+
+    .pop-delhead-div {
+      display: flex;
+      align-items: center;
+
+      .pop-delete-btn {
+        margin: 0 0 0 0.5rem;
+        font-size: 1.25rem;
+        color: rgb(94, 10, 138);
+        text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+        cursor: pointer;
+      }
+
+      .journal-edit {
+        font-size: 1.25rem;
+        color: rgb(30, 236, 61);
+        text-shadow: 0px 0px 4px rgba(10, 138, 72, 0.5);
+        cursor: pointer;
+        justify-self: end;
+        margin: 0 0.5rem;
+      }
+    }
+
+    .pop-jr-exit {
+      color: rgb(241, 58, 12);
+      position: absolute;
+      right: 0.25rem;
+      top: 0.25rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    .pop-jr-description {
+      white-space: pre-line;
+      font-family: cursive;
+    }
+  }
+
+  .popup-jr-div::-webkit-scrollbar {
+    width: 0.3em;
+    visibility: hidden;
+  }
+
+  .popup-jr-div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+  }
+
+  .popup-jr-div::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.612);
+    outline: 1px solid rgba(112, 128, 144, 0);
+    border-radius: 5px;
+  }
+}
+
+.noshow-popjournal {
+  display: none;
+}
+
+#updatejournal-form-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: workspaceModalPop;
+  animation-duration: 0.5s;
+
+  z-index: 999;
+
+  .updatejournal-form {
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .exit-updatejournal-form {
+      color: rgb(241, 58, 12);
+      position: absolute;
+      right: 0.25rem;
+      top: 0.25rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    label {
+      color: #fff;
+    }
+
+    input {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    input:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    textarea {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      margin: 0.5rem 0;
+    }
+
+    textarea:focus {
+      outline: 1px solid rgb(27, 162, 182);
+    }
+
+    .updatejournal-form-btn {
+      position: relative;
+      border-radius: 5px;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgb(211, 211, 211);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+  }
+}
+
+.noshow-upjr-modal {
+  display: none !important;
+}
+
+.guide-content {
+  .right-sidebar {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+    background: rgb(245, 245, 245);
+    box-shadow: 1px 0 15px rgba(0, 0, 0, 0.25);
+
+    .right-link-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      .r-s-links {
+        color: #a5a5a5;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem 0;
+        transition: 0.2s all ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .r-s-links:hover {
+        background: #a5a5a5;
+        color: #fff;
+      }
+    }
+
+    .right-link-container::-webkit-scrollbar {
+      width: 0.3em;
+      visibility: hidden;
+    }
+
+    .right-link-container::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      visibility: hidden;
+    }
+
+    .right-link-container::-webkit-scrollbar-thumb {
+      background-color: rgba(169, 169, 169, 0.612);
+      outline: 1px solid rgba(112, 128, 144, 0);
+      border-radius: 5px;
+    }
+  }
+  .guides-section {
+    .guides-container {
+      .all-guides {
+        display: grid;
+        width: 58%;
+        border-bottom: 2px solid rgba(108, 108, 108, 0.75);
+        // margin: 0 auto;
+        padding: 0 0 3rem 0;
+
+        .guide-heads {
+          margin: 4rem 0 0 0;
+        }
+
+        .first-guide-head {
+          margin: 1rem 0 0 0;
+        }
+
+        .videos {
+          justify-self: center;
+          border-radius: 5px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
 }

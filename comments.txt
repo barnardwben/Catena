@@ -1,0 +1,9 @@
+Functions The Project Will Use
+
+1. Search functionality - Take the users input and search our object/localstorage for the title value that matches
+
+2. Journaling functionality - Journal page that allows user to add a post to a list
+
+3. Workspaces - User can create workspaces where they will be able to create tasks that need to be completed in that workspace
+
+4. Simple ToDo list
