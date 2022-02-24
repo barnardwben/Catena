@@ -76,7 +76,7 @@ const GuidePage = (() => {
 
   let firstVid = document.createElement("iframe");
   firstVid.classList.add("videos");
-  firstVid.src = "../videos/cwguide1.mp4";
+  firstVid.src = "/videos/cwguide1.mp4";
   firstVid.style.width = "700px";
   firstVid.style.height = "394px";
   firstVid.setAttribute("frameborder", "0");
@@ -104,7 +104,7 @@ const GuidePage = (() => {
 
   let secondVid = document.createElement("iframe");
   secondVid.classList.add("videos");
-  secondVid.src = "../videos/ccguide.mp4";
+  secondVid.src = "/videos/ccguide.mp4";
   secondVid.style.width = "700px";
   secondVid.style.height = "394px";
   secondVid.setAttribute("frameborder", "0");
@@ -132,7 +132,7 @@ const GuidePage = (() => {
 
   let thirdVid = document.createElement("iframe");
   thirdVid.classList.add("videos");
-  thirdVid.src = "../videos/mcguide.mp4";
+  thirdVid.src = "/videos/mcguide.mp4";
   thirdVid.style.width = "700px";
   thirdVid.style.height = "394px";
   thirdVid.setAttribute("frameborder", "0");
@@ -160,7 +160,7 @@ const GuidePage = (() => {
 
   let fourthVid = document.createElement("iframe");
   fourthVid.classList.add("videos");
-  fourthVid.src = "../videos/dcguide.mp4";
+  fourthVid.src = "/videos/dcguide.mp4";
   fourthVid.style.width = "700px";
   fourthVid.style.height = "394px";
   fourthVid.setAttribute("frameborder", "0");
@@ -188,7 +188,7 @@ const GuidePage = (() => {
 
   let fifthVid = document.createElement("iframe");
   fifthVid.classList.add("videos");
-  fifthVid.src = "../videos/dwsguide.mp4";
+  fifthVid.src = "/videos/dwsguide.mp4";
   fifthVid.style.width = "700px";
   fifthVid.style.height = "394px";
   fifthVid.setAttribute("frameborder", "0");
@@ -216,7 +216,7 @@ const GuidePage = (() => {
 
   let sixthVid = document.createElement("iframe");
   sixthVid.classList.add("videos");
-  sixthVid.src = "../videos/ctdguide.mp4";
+  sixthVid.src = "/videos/ctdguide.mp4";
   sixthVid.style.width = "700px";
   sixthVid.style.height = "394px";
   sixthVid.setAttribute("frameborder", "0");
@@ -244,7 +244,7 @@ const GuidePage = (() => {
 
   let seventhVid = document.createElement("iframe");
   seventhVid.classList.add("videos");
-  seventhVid.src = "../videos/etdguide.mp4";
+  seventhVid.src = "/videos/etdguide.mp4";
   seventhVid.style.width = "700px";
   seventhVid.style.height = "394px";
   seventhVid.setAttribute("frameborder", "0");
@@ -272,7 +272,7 @@ const GuidePage = (() => {
 
   let eighthVid = document.createElement("iframe");
   eighthVid.classList.add("videos");
-  eighthVid.src = "../videos/dtdguide.mp4";
+  eighthVid.src = "/videos/dtdguide.mp4";
   eighthVid.style.width = "700px";
   eighthVid.style.height = "394px";
   eighthVid.setAttribute("frameborder", "0");
@@ -300,7 +300,7 @@ const GuidePage = (() => {
 
   let ninthVid = document.createElement("iframe");
   ninthVid.classList.add("videos");
-  ninthVid.src = "../videos/tutdguide.mp4";
+  ninthVid.src = "/videos/tutdguide.mp4";
   ninthVid.style.width = "700px";
   ninthVid.style.height = "394px";
   ninthVid.setAttribute("frameborder", "0");
@@ -328,7 +328,7 @@ const GuidePage = (() => {
 
   let tenthVid = document.createElement("iframe");
   tenthVid.classList.add("videos");
-  tenthVid.src = "../videos/cjrguide.mp4";
+  tenthVid.src = "/videos/cjrguide.mp4";
   tenthVid.style.width = "700px";
   tenthVid.style.height = "394px";
   tenthVid.setAttribute("frameborder", "0");
@@ -356,7 +356,7 @@ const GuidePage = (() => {
 
   let eleventhVid = document.createElement("iframe");
   eleventhVid.classList.add("videos");
-  eleventhVid.src = "../videos/ejrguide.mp4";
+  eleventhVid.src = "/videos/ejrguide.mp4";
   eleventhVid.style.width = "700px";
   eleventhVid.style.height = "394px";
   eleventhVid.setAttribute("frameborder", "0");
@@ -384,7 +384,7 @@ const GuidePage = (() => {
 
   let twelfthVid = document.createElement("iframe");
   twelfthVid.classList.add("videos");
-  twelfthVid.src = "../videos/djrguide.mp4";
+  twelfthVid.src = "/videos/djrguide.mp4";
   twelfthVid.style.width = "700px";
   twelfthVid.style.height = "394px";
   twelfthVid.setAttribute("frameborder", "0");
