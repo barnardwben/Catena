@@ -74,7 +74,7 @@ const GuidePage = (() => {
 
   guideOne.appendChild(guideOneDescriptionOne);
 
-  let firstVid = document.createElement("iframe");
+  let firstVid = document.createElement("video");
   firstVid.classList.add("videos");
   firstVid.src = "/videos/cwguide1.mp4";
   firstVid.style.width = "700px";
@@ -103,7 +103,7 @@ const GuidePage = (() => {
 
   guideTwo.appendChild(guideTwoDescriptionTwo);
 
-  let secondVid = document.createElement("iframe");
+  let secondVid = document.createElement("video");
   secondVid.classList.add("videos");
   secondVid.src = "/videos/ccguide.mp4";
   secondVid.style.width = "700px";
