@@ -110,7 +110,8 @@ const GuidePage = (() => {
   secondVid.style.width = "700px";
   secondVid.style.height = "394px";
   secondVid.setAttribute("frameborder", "0");
-  secondVid.setAttribute("autoplay", "false");
+  secondVid.setAttribute("autoplay", "0");
+  secondVid.setAttribute("controls", "");
 
   guideTwo.appendChild(secondVid);
 
@@ -133,13 +134,14 @@ const GuidePage = (() => {
 
   guideThree.appendChild(guideThreeDescriptionThree);
 
-  let thirdVid = document.createElement("iframe");
+  let thirdVid = document.createElement("video");
   thirdVid.classList.add("videos");
   thirdVid.src = "/videos/mcguide.mp4";
   thirdVid.style.width = "700px";
   thirdVid.style.height = "394px";
   thirdVid.setAttribute("frameborder", "0");
-  thirdVid.setAttribute("autoplay", "");
+  thirdVid.setAttribute("autoplay", "0");
+  thirdVid.setAttribute("controls", "");
 
   guideThree.appendChild(thirdVid);
 
@@ -162,13 +164,14 @@ const GuidePage = (() => {
 
   guideFour.appendChild(guideFourDescriptionFour);
 
-  let fourthVid = document.createElement("iframe");
+  let fourthVid = document.createElement("video");
   fourthVid.classList.add("videos");
   fourthVid.src = "/videos/dcguide.mp4";
   fourthVid.style.width = "700px";
   fourthVid.style.height = "394px";
   fourthVid.setAttribute("frameborder", "0");
-  fourthVid.setAttribute("autoplay", "");
+  fourthVid.setAttribute("autoplay", "0");
+  fourthVid.setAttribute("controls", "");
 
   guideFour.appendChild(fourthVid);
 
@@ -191,13 +194,14 @@ const GuidePage = (() => {
 
   guideFive.appendChild(guideFiveDescriptionFive);
 
-  let fifthVid = document.createElement("iframe");
+  let fifthVid = document.createElement("video");
   fifthVid.classList.add("videos");
   fifthVid.src = "/videos/dwsguide.mp4";
   fifthVid.style.width = "700px";
   fifthVid.style.height = "394px";
   fifthVid.setAttribute("frameborder", "0");
-  fifthVid.setAttribute("autoplay", "");
+  fifthVid.setAttribute("autoplay", "0");
+  fifthVid.setAttribute("controls", "");
 
   guideFive.appendChild(fifthVid);
 
@@ -220,13 +224,14 @@ const GuidePage = (() => {
 
   guideSix.appendChild(guideSixDescriptionSix);
 
-  let sixthVid = document.createElement("iframe");
+  let sixthVid = document.createElement("video");
   sixthVid.classList.add("videos");
   sixthVid.src = "/videos/ctdguide.mp4";
   sixthVid.style.width = "700px";
   sixthVid.style.height = "394px";
   sixthVid.setAttribute("frameborder", "0");
-  sixthVid.setAttribute("autoplay", "");
+  sixthVid.setAttribute("autoplay", "0");
+  sixthVid.setAttribute("controls", "");
 
   guideSix.appendChild(sixthVid);
 
@@ -249,13 +254,14 @@ const GuidePage = (() => {
 
   guideSeven.appendChild(guideSevenDescriptionSeven);
 
-  let seventhVid = document.createElement("iframe");
+  let seventhVid = document.createElement("video");
   seventhVid.classList.add("videos");
   seventhVid.src = "/videos/etdguide.mp4";
   seventhVid.style.width = "700px";
   seventhVid.style.height = "394px";
   seventhVid.setAttribute("frameborder", "0");
-  seventhVid.setAttribute("autoplay", "");
+  seventhVid.setAttribute("autoplay", "0");
+  seventhVid.setAttribute("controls", "");
 
   guideSeven.appendChild(seventhVid);
 
@@ -278,13 +284,14 @@ const GuidePage = (() => {
 
   guideEight.appendChild(guideEightDescriptionEight);
 
-  let eighthVid = document.createElement("iframe");
+  let eighthVid = document.createElement("video");
   eighthVid.classList.add("videos");
   eighthVid.src = "/videos/dtdguide.mp4";
   eighthVid.style.width = "700px";
   eighthVid.style.height = "394px";
   eighthVid.setAttribute("frameborder", "0");
-  eighthVid.setAttribute("autoplay", "");
+  eighthVid.setAttribute("autoplay", "0");
+  eighthVid.setAttribute("controls", "");
 
   guideEight.appendChild(eighthVid);
 
@@ -307,13 +314,14 @@ const GuidePage = (() => {
 
   guideNine.appendChild(guideNineDescriptionNine);
 
-  let ninthVid = document.createElement("iframe");
+  let ninthVid = document.createElement("video");
   ninthVid.classList.add("videos");
   ninthVid.src = "/videos/tutdguide.mp4";
   ninthVid.style.width = "700px";
   ninthVid.style.height = "394px";
   ninthVid.setAttribute("frameborder", "0");
-  ninthVid.setAttribute("autoplay", "");
+  ninthVid.setAttribute("autoplay", "0");
+  ninthVid.setAttribute("controls", "");
 
   guideNine.appendChild(ninthVid);
 
@@ -336,13 +344,14 @@ const GuidePage = (() => {
 
   guideTen.appendChild(guideTenDescriptionTen);
 
-  let tenthVid = document.createElement("iframe");
+  let tenthVid = document.createElement("video");
   tenthVid.classList.add("videos");
   tenthVid.src = "/videos/cjrguide.mp4";
   tenthVid.style.width = "700px";
   tenthVid.style.height = "394px";
   tenthVid.setAttribute("frameborder", "0");
-  tenthVid.setAttribute("autoplay", "");
+  tenthVid.setAttribute("autoplay", "0");
+  tenthVid.setAttribute("controls", "");
 
   guideTen.appendChild(tenthVid);
 
@@ -365,13 +374,14 @@ const GuidePage = (() => {
 
   guideEleven.appendChild(guideElevenDescriptionEleven);
 
-  let eleventhVid = document.createElement("iframe");
+  let eleventhVid = document.createElement("video");
   eleventhVid.classList.add("videos");
   eleventhVid.src = "/videos/ejrguide.mp4";
   eleventhVid.style.width = "700px";
   eleventhVid.style.height = "394px";
   eleventhVid.setAttribute("frameborder", "0");
-  eleventhVid.setAttribute("autoplay", "");
+  eleventhVid.setAttribute("autoplay", "0");
+  eleventhVid.setAttribute("controls", "");
 
   guideEleven.appendChild(eleventhVid);
 
@@ -394,13 +404,14 @@ const GuidePage = (() => {
 
   guideTwelve.appendChild(guideTwelveDescriptionTwelve);
 
-  let twelfthVid = document.createElement("iframe");
+  let twelfthVid = document.createElement("video");
   twelfthVid.classList.add("videos");
   twelfthVid.src = "/videos/djrguide.mp4";
   twelfthVid.style.width = "700px";
   twelfthVid.style.height = "394px";
   twelfthVid.setAttribute("frameborder", "0");
-  twelfthVid.setAttribute("autoplay", "");
+  twelfthVid.setAttribute("autoplay", "0");
+  twelfthVid.setAttribute("controls", "");
 
   guideTwelve.appendChild(twelfthVid);
 
