@@ -80,6 +80,7 @@ const GuidePage = (() => {
   firstVid.style.width = "700px";
   firstVid.style.height = "394px";
   firstVid.setAttribute("frameborder", "0");
+  firstVid.setAttribute("autoplay", "");
 
   guideOne.appendChild(firstVid);
 
@@ -108,6 +109,7 @@ const GuidePage = (() => {
   secondVid.style.width = "700px";
   secondVid.style.height = "394px";
   secondVid.setAttribute("frameborder", "0");
+  secondVid.setAttribute("autoplay", "");
 
   guideTwo.appendChild(secondVid);
 
@@ -136,6 +138,7 @@ const GuidePage = (() => {
   thirdVid.style.width = "700px";
   thirdVid.style.height = "394px";
   thirdVid.setAttribute("frameborder", "0");
+  thirdVid.setAttribute("autoplay", "");
 
   guideThree.appendChild(thirdVid);
 
@@ -164,6 +167,7 @@ const GuidePage = (() => {
   fourthVid.style.width = "700px";
   fourthVid.style.height = "394px";
   fourthVid.setAttribute("frameborder", "0");
+  fourthVid.setAttribute("autoplay", "");
 
   guideFour.appendChild(fourthVid);
 
@@ -192,6 +196,7 @@ const GuidePage = (() => {
   fifthVid.style.width = "700px";
   fifthVid.style.height = "394px";
   fifthVid.setAttribute("frameborder", "0");
+  fifthVid.setAttribute("autoplay", "");
 
   guideFive.appendChild(fifthVid);
 
@@ -220,6 +225,7 @@ const GuidePage = (() => {
   sixthVid.style.width = "700px";
   sixthVid.style.height = "394px";
   sixthVid.setAttribute("frameborder", "0");
+  sixthVid.setAttribute("autoplay", "");
 
   guideSix.appendChild(sixthVid);
 
@@ -248,6 +254,7 @@ const GuidePage = (() => {
   seventhVid.style.width = "700px";
   seventhVid.style.height = "394px";
   seventhVid.setAttribute("frameborder", "0");
+  seventhVid.setAttribute("autoplay", "");
 
   guideSeven.appendChild(seventhVid);
 
@@ -276,6 +283,7 @@ const GuidePage = (() => {
   eighthVid.style.width = "700px";
   eighthVid.style.height = "394px";
   eighthVid.setAttribute("frameborder", "0");
+  eighthVid.setAttribute("autoplay", "");
 
   guideEight.appendChild(eighthVid);
 
@@ -304,6 +312,7 @@ const GuidePage = (() => {
   ninthVid.style.width = "700px";
   ninthVid.style.height = "394px";
   ninthVid.setAttribute("frameborder", "0");
+  ninthVid.setAttribute("autoplay", "");
 
   guideNine.appendChild(ninthVid);
 
@@ -332,6 +341,7 @@ const GuidePage = (() => {
   tenthVid.style.width = "700px";
   tenthVid.style.height = "394px";
   tenthVid.setAttribute("frameborder", "0");
+  tenthVid.setAttribute("autoplay", "");
 
   guideTen.appendChild(tenthVid);
 
@@ -360,6 +370,7 @@ const GuidePage = (() => {
   eleventhVid.style.width = "700px";
   eleventhVid.style.height = "394px";
   eleventhVid.setAttribute("frameborder", "0");
+  eleventhVid.setAttribute("autoplay", "");
 
   guideEleven.appendChild(eleventhVid);
 
@@ -388,6 +399,7 @@ const GuidePage = (() => {
   twelfthVid.style.width = "700px";
   twelfthVid.style.height = "394px";
   twelfthVid.setAttribute("frameborder", "0");
+  twelfthVid.setAttribute("autoplay", "");
 
   guideTwelve.appendChild(twelfthVid);
 
