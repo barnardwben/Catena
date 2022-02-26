@@ -80,7 +80,7 @@ const GuidePage = (() => {
   firstVid.style.width = "700px";
   firstVid.style.height = "394px";
   firstVid.setAttribute("frameborder", "0");
-  firstVid.setAttribute("autoplay", "");
+  firstVid.setAttribute("autoplay", "0");
 
   guideOne.appendChild(firstVid);
 
@@ -109,7 +109,7 @@ const GuidePage = (() => {
   secondVid.style.width = "700px";
   secondVid.style.height = "394px";
   secondVid.setAttribute("frameborder", "0");
-  secondVid.setAttribute("autoplay", "");
+  secondVid.setAttribute("autoplay", "false");
 
   guideTwo.appendChild(secondVid);
 
