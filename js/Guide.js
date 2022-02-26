@@ -81,6 +81,7 @@ const GuidePage = (() => {
   firstVid.style.height = "394px";
   firstVid.setAttribute("frameborder", "0");
   firstVid.setAttribute("autoplay", "0");
+  firstVid.setAttribute("controls", "");
 
   guideOne.appendChild(firstVid);
 
