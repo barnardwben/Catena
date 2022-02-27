@@ -18,7 +18,7 @@ const GuidePage = (() => {
     { title: "Deleting Workspaces", id: "#delete-ws" },
     { title: "Creating To-Do Items", id: "#create-todo" },
     { title: "Editing To-Do Items", id: "#edit-todo" },
-    { title: "Deleting To-Do Items", id: "#delete-todo" },
+    { title: "Deleting To-Do Items", id: "#deleting-todo" },
     { title: "Today/Upcoming To-Do", id: "#tu-todo" },
     { title: "Creating Journals", id: "#create-journal" },
     { title: "Editing Journals", id: "#edit-journal" },
@@ -122,7 +122,7 @@ const GuidePage = (() => {
 
   let guideThreeHeaderThree = document.createElement("h3");
   guideThreeHeaderThree.classList.add("guide-heads");
-  guideThreeHeaderThree.id = "move-ws-card";
+  guideThreeHeaderThree.id = "move-ws-cards";
   guideThreeHeaderThree.textContent = "Moving Workspace Cards";
 
   guideThree.appendChild(guideThreeHeaderThree);
