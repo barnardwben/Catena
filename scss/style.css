@@ -1043,6 +1043,10 @@ body {
   border-radius: 5px;
   padding: 0.5rem;
   color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  word-break: break-all;
   -webkit-box-shadow: 0 0 15px rgba(115, 115, 115, 0.2);
           box-shadow: 0 0 15px rgba(115, 115, 115, 0.2);
 }
@@ -1785,5 +1789,63 @@ body {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.guide-content .guides-section .guides-container .all-guides .guide-trash {
+  font-size: 1.5rem;
+  color: #5e0a8a;
+  text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+  cursor: pointer;
+}
+
+.guide-content .guides-section .guides-container .all-guides .guide-add-todo {
+  background-color: #00e4fd;
+  border: 1px solid rgba(0, 208, 254, 0.9);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: end;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 15px rgba(115, 115, 115, 0.45);
+          box-shadow: 0 0 15px rgba(115, 115, 115, 0.45);
+}
+
+.guide-content .guides-section .guides-container .all-guides .guide-edit-todo {
+  font-size: 1.5rem;
+  color: #1eec3d;
+  text-shadow: 0px 0px 4px rgba(10, 138, 72, 0.5);
+  cursor: pointer;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin: 0 0.5rem;
+}
+
+.guide-content .guides-section .guides-container .all-guides .guide-jr-add {
+  color: #2db57a;
+  text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+  cursor: pointer;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.guide-content .guides-section .guides-container .all-guides .guide-jr-file {
+  color: #8c8c8c;
+  text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+  cursor: pointer;
+  font-size: 1.5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0 0.5rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.guide-content .guides-section .guides-container .all-guides .sb-filter-btns {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

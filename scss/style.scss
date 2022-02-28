@@ -891,6 +891,8 @@ body {
           border-radius: 5px;
           padding: 0.5rem;
           color: #fff;
+          width: fit-content;
+          word-break: break-all;
           box-shadow: 0 0 15px rgba(115, 115, 115, 0.2);
         }
         .task-due {
