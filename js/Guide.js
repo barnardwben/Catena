@@ -77,8 +77,6 @@ const GuidePage = (() => {
   let firstVid = document.createElement("video");
   firstVid.classList.add("videos");
   firstVid.src = "/videos/cwguide1.mp4";
-  firstVid.style.width = "700px";
-  firstVid.style.height = "394px";
   firstVid.setAttribute("frameborder", "0");
   firstVid.setAttribute("autoplay", "0");
   firstVid.setAttribute("controls", "");
@@ -107,8 +105,6 @@ const GuidePage = (() => {
   let secondVid = document.createElement("video");
   secondVid.classList.add("videos");
   secondVid.src = "/videos/ccguide.mp4";
-  secondVid.style.width = "700px";
-  secondVid.style.height = "394px";
   secondVid.setAttribute("frameborder", "0");
   secondVid.setAttribute("autoplay", "0");
   secondVid.setAttribute("controls", "");
@@ -137,8 +133,6 @@ const GuidePage = (() => {
   let thirdVid = document.createElement("video");
   thirdVid.classList.add("videos");
   thirdVid.src = "/videos/mcguide.mp4";
-  thirdVid.style.width = "700px";
-  thirdVid.style.height = "394px";
   thirdVid.setAttribute("frameborder", "0");
   thirdVid.setAttribute("autoplay", "0");
   thirdVid.setAttribute("controls", "");
@@ -167,8 +161,6 @@ const GuidePage = (() => {
   let fourthVid = document.createElement("video");
   fourthVid.classList.add("videos");
   fourthVid.src = "/videos/dcguide.mp4";
-  fourthVid.style.width = "700px";
-  fourthVid.style.height = "394px";
   fourthVid.setAttribute("frameborder", "0");
   fourthVid.setAttribute("autoplay", "0");
   fourthVid.setAttribute("controls", "");
@@ -197,8 +189,6 @@ const GuidePage = (() => {
   let fifthVid = document.createElement("video");
   fifthVid.classList.add("videos");
   fifthVid.src = "/videos/dwsguide.mp4";
-  fifthVid.style.width = "700px";
-  fifthVid.style.height = "394px";
   fifthVid.setAttribute("frameborder", "0");
   fifthVid.setAttribute("autoplay", "0");
   fifthVid.setAttribute("controls", "");
@@ -227,8 +217,6 @@ const GuidePage = (() => {
   let sixthVid = document.createElement("video");
   sixthVid.classList.add("videos");
   sixthVid.src = "/videos/ctdguide.mp4";
-  sixthVid.style.width = "700px";
-  sixthVid.style.height = "394px";
   sixthVid.setAttribute("frameborder", "0");
   sixthVid.setAttribute("autoplay", "0");
   sixthVid.setAttribute("controls", "");
@@ -257,8 +245,6 @@ const GuidePage = (() => {
   let seventhVid = document.createElement("video");
   seventhVid.classList.add("videos");
   seventhVid.src = "/videos/etdguide.mp4";
-  seventhVid.style.width = "700px";
-  seventhVid.style.height = "394px";
   seventhVid.setAttribute("frameborder", "0");
   seventhVid.setAttribute("autoplay", "0");
   seventhVid.setAttribute("controls", "");
@@ -287,8 +273,6 @@ const GuidePage = (() => {
   let eighthVid = document.createElement("video");
   eighthVid.classList.add("videos");
   eighthVid.src = "/videos/dtdguide.mp4";
-  eighthVid.style.width = "700px";
-  eighthVid.style.height = "394px";
   eighthVid.setAttribute("frameborder", "0");
   eighthVid.setAttribute("autoplay", "0");
   eighthVid.setAttribute("controls", "");
@@ -317,8 +301,6 @@ const GuidePage = (() => {
   let ninthVid = document.createElement("video");
   ninthVid.classList.add("videos");
   ninthVid.src = "/videos/tutdguide.mp4";
-  ninthVid.style.width = "700px";
-  ninthVid.style.height = "394px";
   ninthVid.setAttribute("frameborder", "0");
   ninthVid.setAttribute("autoplay", "0");
   ninthVid.setAttribute("controls", "");
@@ -347,8 +329,6 @@ const GuidePage = (() => {
   let tenthVid = document.createElement("video");
   tenthVid.classList.add("videos");
   tenthVid.src = "/videos/cjrguide.mp4";
-  tenthVid.style.width = "700px";
-  tenthVid.style.height = "394px";
   tenthVid.setAttribute("frameborder", "0");
   tenthVid.setAttribute("autoplay", "0");
   tenthVid.setAttribute("controls", "");
@@ -377,8 +357,6 @@ const GuidePage = (() => {
   let eleventhVid = document.createElement("video");
   eleventhVid.classList.add("videos");
   eleventhVid.src = "/videos/ejrguide.mp4";
-  eleventhVid.style.width = "700px";
-  eleventhVid.style.height = "394px";
   eleventhVid.setAttribute("frameborder", "0");
   eleventhVid.setAttribute("autoplay", "0");
   eleventhVid.setAttribute("controls", "");
@@ -407,8 +385,6 @@ const GuidePage = (() => {
   let twelfthVid = document.createElement("video");
   twelfthVid.classList.add("videos");
   twelfthVid.src = "/videos/djrguide.mp4";
-  twelfthVid.style.width = "700px";
-  twelfthVid.style.height = "394px";
   twelfthVid.setAttribute("frameborder", "0");
   twelfthVid.setAttribute("autoplay", "0");
   twelfthVid.setAttribute("controls", "");
