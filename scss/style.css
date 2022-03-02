@@ -263,6 +263,12 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 450px) {
+  #sidebar .sidebar-content-container .sidebar-middle #workspaces {
+    max-height: 110px;
+  }
+}
+
 #sidebar .sidebar-content-container .sidebar-middle #documents-container {
   margin: 2rem 0;
 }
