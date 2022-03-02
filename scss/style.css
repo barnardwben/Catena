@@ -78,6 +78,12 @@ body {
   width: 215px;
 }
 
+@media (max-width: 450px) {
+  #sidebar .sidebar-content-container .sidebar-top .logo-container img {
+    width: 120px;
+  }
+}
+
 #sidebar .sidebar-content-container .sidebar-top .search-bar-container {
   width: 100%;
   display: -webkit-box;
@@ -134,6 +140,12 @@ body {
   color: rgba(25, 23, 17, 0.6);
   -webkit-box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.25);
           box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 450px) {
+  #sidebar .sidebar-content-container .sidebar-top .search-bar-container {
+    display: none;
+  }
 }
 
 #sidebar .sidebar-content-container .sidebar-top .sidebar-toplinks-container {

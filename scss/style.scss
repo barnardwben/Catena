@@ -54,6 +54,12 @@ body {
         img {
           width: 215px;
         }
+
+        @media (max-width: 450px) {
+          img {
+            width: 120px;
+          }
+        }
       }
 
       .search-bar-container {
@@ -100,6 +106,12 @@ body {
             color: rgba(25, 23, 17, 0.6);
             box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.25);
           }
+        }
+      }
+
+      @media (max-width: 450px) {
+        .search-bar-container {
+          display: none;
         }
       }
 
