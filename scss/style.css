@@ -22,6 +22,7 @@ body {
           align-items: center;
   -webkit-box-shadow: 1px 0 15px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 0 15px rgba(0, 0, 0, 0.25);
+  z-index: 999;
 }
 
 #sidebar .open-close-sidebar {
@@ -464,17 +465,13 @@ body {
     left: 0;
     top: 0;
     bottom: 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
   .closed-sb {
-    left: -210px;
+    left: -94%;
     top: 0;
     bottom: 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
 }
 
@@ -495,10 +492,10 @@ body {
 
 @media (max-width: 450px) {
   .main-left {
-    left: 35px;
+    left: 8%;
   }
   .main-right {
-    left: 250px;
+    left: 8%;
   }
 }
 
