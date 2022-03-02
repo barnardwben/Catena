@@ -265,7 +265,7 @@ body {
 
 @media (max-width: 450px) {
   #sidebar .sidebar-content-container .sidebar-middle #workspaces {
-    max-height: 110px;
+    max-height: 50px;
   }
 }
 
