@@ -537,6 +537,7 @@ body {
           animation: workspaceModalPop;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  z-index: 999999;
 }
 
 #workspace-form-container .workspace-form {
@@ -916,6 +917,7 @@ body {
           animation: workspaceModalPop;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  z-index: 999999;
 }
 
 #card-form-container .card-form {
@@ -1007,6 +1009,7 @@ body {
           animation: workspaceModalPop;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  z-index: 999999;
 }
 
 #task-form-container .task-form {
@@ -1259,6 +1262,7 @@ body {
           animation: workspaceModalPop;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  z-index: 999999;
 }
 
 #updatetask-form-container .updatetask-form {
@@ -1638,6 +1642,7 @@ body {
           animation: workspaceModalPop;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  z-index: 999999;
 }
 
 #journal-form-container .journal-form {
@@ -1964,7 +1969,7 @@ body {
           animation: workspaceModalPop;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  z-index: 999;
+  z-index: 999999;
 }
 
 #updatejournal-form-container .updatejournal-form {

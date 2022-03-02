@@ -477,6 +477,7 @@ body {
   align-items: center;
   animation: workspaceModalPop;
   animation-duration: 0.5s;
+  z-index: 999999;
 
   .workspace-form {
     width: fit-content;
@@ -799,6 +800,7 @@ body {
   align-items: center;
   animation: workspaceModalPop;
   animation-duration: 0.5s;
+  z-index: 999999;
 
   .card-form {
     width: fit-content;
@@ -875,6 +877,7 @@ body {
   align-items: center;
   animation: workspaceModalPop;
   animation-duration: 0.5s;
+  z-index: 999999;
 
   .task-form {
     width: fit-content;
@@ -1086,6 +1089,7 @@ body {
   align-items: center;
   animation: workspaceModalPop;
   animation-duration: 0.5s;
+  z-index: 999999;
 
   .updatetask-form {
     width: fit-content;
@@ -1404,6 +1408,7 @@ body {
   align-items: center;
   animation: workspaceModalPop;
   animation-duration: 0.5s;
+  z-index: 999999;
 
   .journal-form {
     width: fit-content;
@@ -1669,8 +1674,7 @@ body {
   align-items: center;
   animation: workspaceModalPop;
   animation-duration: 0.5s;
-
-  z-index: 999;
+  z-index: 999999;
 
   .updatejournal-form {
     width: fit-content;
