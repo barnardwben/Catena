@@ -3,6 +3,7 @@ const Sidebar = (() => {
   let sidebarTriggerBtn = document.querySelector(".sb-oc-trigger");
   let sidebar = document.querySelector("#sidebar");
   let mainContent = document.querySelector("#main-content");
+  let pageBtns = document.querySelectorAll(".pages");
 
   // FUNCTIONS
   //// FUNCTION TO CHANGE OPEN/CLOSE SIDEBAR BUTTON STYLING
@@ -35,12 +36,32 @@ const Sidebar = (() => {
     }
   }
 
+  function sbPagesClicker() {
+    console.log("working");
+    sidebar.classList.remove("opened-sb");
+    sidebar.classList.add("closed-sb");
+
+    sidebarTriggerBtn.classList.remove("active-sb");
+    sidebarTriggerBtn.classList.add("inactive-sb");
+
+    mainContent.classList.remove("main-right");
+    mainContent.classList.add("main-left");
+  }
+
   // EVENT LISTNERS
   sidebarTriggerBtn.addEventListener("click", (e) => {
     clickedTrigger(e);
 
     openCloseSidebar(e);
   });
+
+  pageBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      sbPagesClicker();
+    });
+  });
+
+  return { sbPagesClicker, sidebarTriggerBtn, sidebar, mainContent, pageBtns };
 })();
 
 export { Sidebar };
