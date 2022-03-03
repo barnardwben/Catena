@@ -1,6 +1,7 @@
 import { Modals } from "./Modals";
 import { WorkspaceModal } from "./WorkspaceModal";
 import { PageSwitch } from "./PageSwitcher";
+import { Sidebar } from "./Sidebar";
 
 // OUR FACTORY FUNCTION TO CREATE WORKSPACES
 const Workspace = (title, description, id) => {
@@ -101,6 +102,8 @@ const WorkspaceFormHandler = (() => {
         PageSwitch.activePageBtn(e.target);
         // EVENT TO SHOW USER CORRECT CONTENT BASED ON CLICKED BUTTON
         PageSwitch.activePage(e.target);
+        // EVENT TO CLOSE SIDEBAR ON WORKSPACES SIDEBAR BTN CLICK
+        Sidebar.sbPagesClicker();
       });
 
       // APPEND BUTTON TO DIV
@@ -166,6 +169,8 @@ const WorkspaceFormHandler = (() => {
       // SWITCH TO RECENTLY CREATED WORKSPACE PAGE AND SET ITS BTN TO ACTIVE
       PageSwitch.activePageBtn(wsBtns[newWorkspace.id]);
       PageSwitch.activePage(wsBtns[newWorkspace.id]);
+      // EVENT TO CLOSE SIDEBAR ON WORKSPACES SIDEBAR BTN CLICK
+      Sidebar.sbPagesClicker();
 
       // RUN FUNCTION TO EXIT OUR ADD NEW WORKSPACE MODAL
       Modals.exitModal(
