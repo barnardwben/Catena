@@ -90,18 +90,50 @@ const WorkspacePages = (() => {
 
     // CREATE ON DECK ROW
     let onDeckRow = document.createElement("div");
-    onDeckRow.classList.add("ondeck", "ws-row");
+    onDeckRow.classList.add("ondeck", "ws-row", "open-row");
     let onDeckTitle = document.createElement("h3");
     onDeckTitle.classList.add("row-title");
     onDeckTitle.textContent = "On Deck";
+    let onDeckRowBtns = document.createElement("div");
+    onDeckRowBtns.classList.add("ondeck-row-btns");
+    let mobileCollapseRowOne = document.createElement("button");
+    mobileCollapseRowOne.classList.add(
+      "mobile-collapse-one",
+      "mobile-cl",
+      "opened-row"
+    );
+    mobileCollapseRowOne.addEventListener("click", () => {
+      if (mobileCollapseRowOne.classList.contains("opened-row")) {
+        console.log("closing");
+        mobileCollapseRowOne.classList.remove("opened-row");
+        mobileCollapseRowOne.classList.add("closed-row");
+        onDeckRow.classList.remove("open-row");
+        onDeckRow.classList.add("close-row");
+      } else if (mobileCollapseRowOne.classList.contains("closed-row")) {
+        console.log("opening");
+        mobileCollapseRowOne.classList.remove("closed-row");
+        mobileCollapseRowOne.classList.add("opened-row");
+        onDeckRow.classList.remove("close-row");
+        onDeckRow.classList.add("open-row");
+      }
+    });
+    let mobileCollapseIcon = document.createElement("i");
+    mobileCollapseIcon.classList.add(
+      "fas",
+      "fa-caret-down",
+      "mobile-collapse-one"
+    );
     let onDeckBtn = document.createElement("button");
     onDeckBtn.classList.add("ondeck-btn", "ws-btns");
     onDeckBtn.dataset.rowtype = 0;
     let onDeckIcon = document.createElement("i");
     onDeckIcon.classList.add("fas", "fa-plus", "ondeck-btn");
     onDeckIcon.dataset.rowtype = 0;
+    onDeckRowBtns.appendChild(mobileCollapseRowOne);
+    onDeckRowBtns.appendChild(onDeckBtn);
+    mobileCollapseRowOne.appendChild(mobileCollapseIcon);
+    onDeckTitle.appendChild(onDeckRowBtns);
     onDeckBtn.appendChild(onDeckIcon);
-    onDeckTitle.appendChild(onDeckBtn);
     onDeckRow.appendChild(onDeckTitle);
 
     let onDeckArr = currentSpace.ondeck;
@@ -196,10 +228,39 @@ const WorkspacePages = (() => {
 
     // CREATE IN PROGRESS ROW
     let inProgressRow = document.createElement("div");
-    inProgressRow.classList.add("inprogress", "ws-row");
+    inProgressRow.classList.add("inprogress", "ws-row", "open-row");
     let inProgressTitle = document.createElement("h3");
     inProgressTitle.classList.add("row-title");
     inProgressTitle.textContent = "In Progress";
+    let inProgressRowBtns = document.createElement("div");
+    inProgressRowBtns.classList.add("inprogress-row-btns");
+    let mobileCollapseRowTwo = document.createElement("button");
+    mobileCollapseRowTwo.classList.add(
+      "mobile-collapse-two",
+      "mobile-cl",
+      "opened-row"
+    );
+    mobileCollapseRowTwo.addEventListener("click", () => {
+      if (mobileCollapseRowTwo.classList.contains("opened-row")) {
+        console.log("closing");
+        mobileCollapseRowTwo.classList.remove("opened-row");
+        mobileCollapseRowTwo.classList.add("closed-row");
+        inProgressRow.classList.remove("open-row");
+        inProgressRow.classList.add("close-row");
+      } else if (mobileCollapseRowTwo.classList.contains("closed-row")) {
+        console.log("opening");
+        mobileCollapseRowTwo.classList.remove("closed-row");
+        mobileCollapseRowTwo.classList.add("opened-row");
+        inProgressRow.classList.remove("close-row");
+        inProgressRow.classList.add("open-row");
+      }
+    });
+    let mobileCollapseIconTwo = document.createElement("i");
+    mobileCollapseIconTwo.classList.add(
+      "fas",
+      "fa-caret-down",
+      "mobile-collapse-two"
+    );
 
     let inProgressBtn = document.createElement("button");
     inProgressBtn.classList.add("inprogress-btn", "ws-btns");
@@ -207,8 +268,11 @@ const WorkspacePages = (() => {
     let inProgressIcon = document.createElement("i");
     inProgressIcon.classList.add("fas", "fa-plus", "inprogress-btn");
     inProgressIcon.dataset.rowtype = 1;
+    inProgressRowBtns.appendChild(mobileCollapseRowTwo);
+    inProgressRowBtns.appendChild(inProgressBtn);
+    mobileCollapseRowTwo.appendChild(mobileCollapseIconTwo);
+    inProgressTitle.appendChild(inProgressRowBtns);
     inProgressBtn.appendChild(inProgressIcon);
-    inProgressTitle.appendChild(inProgressBtn);
     inProgressRow.appendChild(inProgressTitle);
 
     let inProgressArr = currentSpace.inprogress;
@@ -304,18 +368,50 @@ const WorkspacePages = (() => {
 
     // CREATE REVIEW ROW
     let reviewRow = document.createElement("div");
-    reviewRow.classList.add("review", "ws-row");
+    reviewRow.classList.add("review", "ws-row", "open-row");
     let reviewTitle = document.createElement("h3");
     reviewTitle.classList.add("row-title");
     reviewTitle.textContent = "Review";
+    let reviewRowBtns = document.createElement("div");
+    reviewRowBtns.classList.add("review-row-btns");
+    let mobileCollapseRowThree = document.createElement("button");
+    mobileCollapseRowThree.classList.add(
+      "mobile-collapse-three",
+      "mobile-cl",
+      "opened-row"
+    );
+    mobileCollapseRowThree.addEventListener("click", () => {
+      if (mobileCollapseRowThree.classList.contains("opened-row")) {
+        console.log("closing");
+        mobileCollapseRowThree.classList.remove("opened-row");
+        mobileCollapseRowThree.classList.add("closed-row");
+        reviewRow.classList.remove("open-row");
+        reviewRow.classList.add("close-row");
+      } else if (mobileCollapseRowThree.classList.contains("closed-row")) {
+        console.log("opening");
+        mobileCollapseRowThree.classList.remove("closed-row");
+        mobileCollapseRowThree.classList.add("opened-row");
+        reviewRow.classList.remove("close-row");
+        reviewRow.classList.add("open-row");
+      }
+    });
+    let mobileCollapseIconThree = document.createElement("i");
+    mobileCollapseIconThree.classList.add(
+      "fas",
+      "fa-caret-down",
+      "mobile-collapse-three"
+    );
     let reviewBtn = document.createElement("button");
     reviewBtn.classList.add("review-btn", "ws-btns");
     reviewBtn.dataset.rowtype = 2;
     let reviewIcon = document.createElement("i");
     reviewIcon.classList.add("fas", "fa-plus", "review-btn");
     reviewIcon.dataset.rowtype = 2;
+    reviewRowBtns.appendChild(mobileCollapseRowThree);
+    reviewRowBtns.appendChild(reviewBtn);
+    mobileCollapseRowThree.appendChild(mobileCollapseIconThree);
+    reviewTitle.appendChild(reviewRowBtns);
     reviewBtn.appendChild(reviewIcon);
-    reviewTitle.appendChild(reviewBtn);
     reviewRow.appendChild(reviewTitle);
 
     let reviewArr = currentSpace.review;
@@ -409,18 +505,50 @@ const WorkspacePages = (() => {
     });
     // CREATE COMPLETE ROW
     let completeRow = document.createElement("div");
-    completeRow.classList.add("complete", "ws-row");
+    completeRow.classList.add("complete", "ws-row", "open-row");
     let completeTitle = document.createElement("h3");
     completeTitle.classList.add("row-title");
     completeTitle.textContent = "Complete";
+    let completeRowBtns = document.createElement("div");
+    completeRowBtns.classList.add("complete-row-btns");
+    let mobileCollapseRowFour = document.createElement("button");
+    mobileCollapseRowFour.classList.add(
+      "mobile-collapse-four",
+      "mobile-cl",
+      "opened-row"
+    );
+    mobileCollapseRowFour.addEventListener("click", () => {
+      if (mobileCollapseRowFour.classList.contains("opened-row")) {
+        console.log("closing");
+        mobileCollapseRowFour.classList.remove("opened-row");
+        mobileCollapseRowFour.classList.add("closed-row");
+        completeRow.classList.remove("open-row");
+        completeRow.classList.add("close-row");
+      } else if (mobileCollapseRowFour.classList.contains("closed-row")) {
+        console.log("opening");
+        mobileCollapseRowFour.classList.remove("closed-row");
+        mobileCollapseRowFour.classList.add("opened-row");
+        completeRow.classList.remove("close-row");
+        completeRow.classList.add("open-row");
+      }
+    });
+    let mobileCollapseIconFour = document.createElement("i");
+    mobileCollapseIconFour.classList.add(
+      "fas",
+      "fa-caret-down",
+      "mobile-collapse-four"
+    );
     let completeBtn = document.createElement("button");
     completeBtn.classList.add("complete-btn", "ws-btns");
     completeBtn.dataset.rowtype = 3;
     let completeIcon = document.createElement("i");
     completeIcon.classList.add("fas", "fa-plus", "complete-btn");
     completeIcon.dataset.rowtype = 3;
+    completeRowBtns.appendChild(mobileCollapseRowFour);
+    completeRowBtns.appendChild(completeBtn);
+    mobileCollapseRowFour.appendChild(mobileCollapseIconFour);
+    completeTitle.appendChild(completeRowBtns);
     completeBtn.appendChild(completeIcon);
-    completeTitle.appendChild(completeBtn);
     completeRow.appendChild(completeTitle);
 
     let completeArr = currentSpace.complete;
