@@ -1762,6 +1762,20 @@ body {
   transition: 0.2s all ease-in-out;
 }
 
+@media (max-width: 500px) {
+  .journal-content .journals-section .journals-container .add-journal-btn {
+    font-size: 2rem;
+    color: #2db57a;
+    text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+    cursor: pointer;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0 0.5rem 3rem 0.5rem;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
 .journal-content .journals-section .journals-container .add-journal-btn:hover {
   color: #5a5a5a;
 }
@@ -1800,6 +1814,34 @@ body {
   color: #4b5458;
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .journal-content .journals-section .journals-container .jr-div .all-journals {
+    font-size: 2rem;
+    color: #8c8c8c;
+    text-shadow: 0px 0px 4px rgba(93, 10, 138, 0.5);
+    cursor: pointer;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0 0.5rem;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .journal-content .journals-section .journals-container .jr-div .journal-title {
+    text-align: center;
+    font-size: 12px;
+  }
+  .journal-content .journals-section .journals-container .jr-div .journal-created-date {
+    border: 1px solid rgba(204, 134, 28, 0.898);
+    background: rgba(255, 230, 213, 0.898);
+    font-weight: 600;
+    font-size: 8px;
+    outline: none;
+    color: #4b5458;
+    padding: 0.15rem;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 1091px) {
@@ -1848,8 +1890,8 @@ body {
   .journal-content .journals-section .journals-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
