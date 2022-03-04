@@ -632,6 +632,22 @@ body {
 
       .row-title {
         margin: 1rem 0 1rem 0.8rem;
+
+        .mobile-cl {
+          border: none;
+          background: none;
+          cursor: pointer;
+          opacity: 0.5;
+          transition: 0.2s all ease-in-out;
+        }
+
+        .mobile-cl:hover {
+          opacity: 1;
+        }
+
+        .closed-row {
+          transform: rotate(180deg);
+        }
       }
 
       .card-div {
@@ -757,6 +773,11 @@ body {
           }
         }
       }
+    }
+
+    .close-row {
+      max-height: 56px;
+      overflow: hidden;
     }
 
     .ws-row::-webkit-scrollbar {
