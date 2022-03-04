@@ -243,7 +243,13 @@ body {
 
       @media (max-width: 450px) {
         #workspaces {
-          max-height: 62px;
+          max-height: 66px;
+          box-shadow: inset 0px -15px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        #workspaces::-webkit-scrollbar {
+          width: 0.7em;
+          visibility: hidden;
         }
       }
 

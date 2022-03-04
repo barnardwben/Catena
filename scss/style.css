@@ -285,7 +285,13 @@ body {
 
 @media (max-width: 450px) {
   #sidebar .sidebar-content-container .sidebar-middle #workspaces {
-    max-height: 62px;
+    max-height: 66px;
+    -webkit-box-shadow: inset 0px -15px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0px -15px 15px rgba(0, 0, 0, 0.05);
+  }
+  #sidebar .sidebar-content-container .sidebar-middle #workspaces::-webkit-scrollbar {
+    width: 0.7em;
+    visibility: hidden;
   }
 }
 
