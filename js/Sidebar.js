@@ -4,8 +4,21 @@ const Sidebar = (() => {
   let sidebar = document.querySelector("#sidebar");
   let mainContent = document.querySelector("#main-content");
   let pageBtns = document.querySelectorAll(".pages");
+  let openSbMenu = document.querySelector(".open-sb-menu");
 
   // FUNCTIONS
+
+  function openMenu() {
+    sidebar.classList.add("opened-sb");
+    sidebar.classList.remove("closed-sb");
+
+    sidebarTriggerBtn.classList.add("active-sb");
+    sidebarTriggerBtn.classList.remove("inactive-sb");
+
+    mainContent.classList.add("main-right");
+    mainContent.classList.remove("main-left");
+  }
+
   //// FUNCTION TO CHANGE OPEN/CLOSE SIDEBAR BUTTON STYLING
   function clickedTrigger(e) {
     if (e.target.classList.contains("active-sb")) {
@@ -53,6 +66,10 @@ const Sidebar = (() => {
     clickedTrigger(e);
 
     openCloseSidebar(e);
+  });
+
+  openSbMenu.addEventListener("click", () => {
+    openMenu();
   });
 
   pageBtns.forEach((btn) => {
