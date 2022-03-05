@@ -712,6 +712,9 @@ body {
 
 #workspace-board-section .workspace-board-container .ws-row {
   max-height: 540px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 93%;
   background: rgba(230, 229, 229, 0.9);
   border-radius: 5px;
