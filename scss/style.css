@@ -231,6 +231,12 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 500px) {
+  #sidebar .sidebar-content-container .sidebar-middle .workspace-btn-container .add-workspaces-btn .fas {
+    opacity: 1;
+  }
+}
+
 #sidebar .sidebar-content-container .sidebar-middle #workspaces {
   max-height: 147.5px;
   overflow-y: scroll;
