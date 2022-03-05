@@ -899,6 +899,13 @@ body {
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  #workspace-board-section .workspace-board-container .ws-row {
+    width: 100%;
+    max-height: 600px;
+  }
+}
+
 #workspace-board-section .workspace-board-container .close-row {
   max-height: 56px;
   overflow: hidden;
