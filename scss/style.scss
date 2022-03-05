@@ -612,6 +612,12 @@ body {
     color: rgb(50, 63, 68);
   }
 
+  @media (max-width: 500px) {
+    .ws-description {
+      width: 82%;
+    }
+  }
+
   .ws-delete-btn {
     // position: absolute;
     // top: 1rem;
@@ -839,6 +845,7 @@ body {
   @media (max-width: 600px) {
     .workspace-board-container {
       grid-template-columns: 1fr;
+      justify-content: center;
     }
   }
 }

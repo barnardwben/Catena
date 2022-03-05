@@ -691,6 +691,12 @@ body {
   color: #323f44;
 }
 
+@media (max-width: 500px) {
+  .ws-content .ws-description {
+    width: 82%;
+  }
+}
+
 .ws-content .ws-delete-btn {
   margin: 2rem 0 0 0.5rem;
   font-size: 1.5rem;
@@ -952,6 +958,9 @@ body {
   #workspace-board-section .workspace-board-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
