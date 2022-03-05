@@ -10,6 +10,7 @@ body {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
+  cursor: pointer;
 }
 
 .open-menu-container .open-sb-menu {
@@ -49,6 +50,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  cursor: pointer;
 }
 
 #sidebar .open-close-sidebar .inactive-sb {
