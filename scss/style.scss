@@ -74,11 +74,13 @@ body {
         align-items: center;
         img {
           width: 215px;
+          margin: 0 0 0.5rem 0;
         }
 
         @media (max-width: 450px) {
           img {
             width: 120px;
+            margin: 0 0 0 0;
           }
         }
       }

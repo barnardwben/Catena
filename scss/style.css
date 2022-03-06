@@ -98,11 +98,13 @@ body {
 
 #sidebar .sidebar-content-container .sidebar-top .logo-container img {
   width: 215px;
+  margin: 0 0 0.5rem 0;
 }
 
 @media (max-width: 450px) {
   #sidebar .sidebar-content-container .sidebar-top .logo-container img {
     width: 120px;
+    margin: 0 0 0 0;
   }
 }
 
